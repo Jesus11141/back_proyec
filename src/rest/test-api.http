@@ -1,0 +1,33 @@
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test"
+}
+### Obtener Todos los Productos
+GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJzdWIiOjEsImlhdCI6MTczMTQzNjg3MywiZXhwIjoxNzMxNDM2OTMzfQ.h-Yan34uaGr09UmVPBWWdLSkbJ44Hzf1vwyyc6VsrmM
+
+### Obtener un Producto por ID
+GET http://localhost:3000/products/1
+Authorization: Bearer 
+
+### Crear un Nuevo Producto
+POST http://localhost:3000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJzdWIiOjEsImlhdCI6MTczMTQzNjg3MywiZXhwIjoxNzMxNDM2OTMzfQ.h-Yan34uaGr09UmVPBWWdLSkbJ44Hzf1vwyyc6VsrmM
+
+{
+  "name": "Lavadora",
+  "description": "secadora 20kg",
+  "precio": 199,
+  "stock": 2
+}
+
+
+### Eliminar un Producto por ID
+DELETE http://localhost:3000/products/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJzdWIiOjEsImlhdCI6MTczMTQzNjE0NCwiZXhwIjoxNzMxNDM2MjA0fQ.A8OF9S_30pTr93S7iFgEWQxmxVWHHInxdikVYlcxZAY
+
